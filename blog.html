@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <style>
+
+body {
+  background-image: url("./bg.png");
+  background-size: cover;
+  background-position:center center;
+  font-family: "Zilla Slab", serif;
+  color: #fff;
+}
+       
       #blog_container {
         width: 85%;
         margin: 0 auto;
@@ -14,10 +23,55 @@
         text-align: center;
         font-size: 40px;
       }
+      #blog_content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 20px;
+      }
+      #blog_content div{
+       border: 1px solid #ddd;
+        box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.75);
+        padding: 20px;
+        border-radius: 10px;
+        
+  background: linear-gradient(
+    92.49deg,
+    rgba(255, 255, 255, 0.1) 0.18%,
+    rgba(255, 255, 255, 0.05) 99.85%
+  );
+
+      }
+        p , li{
+        font-size: 25px!important;
+        text-align: justify;
+      }
+      h2{
+        font-size: 30px;
+      }
+
+      @media screen  and (max-width:992px){
+        #blog_content{
+       
+        grid-template-columns: 100%;
+       
+      }
+      p{
+        font-size: 20px!important;
+      }
+      }
+      @media screen  and (max-width:480px){
+         h2{
+            font-size: 25px;
+         }
+         p,li{
+            font-size: 20px!important;
+         }
+      }
     </style>
   </head>
   <body>
     <main>
+
       <section id="blog_container">
         <h1>Read the Javascript Blog</h1>
         <div id="blog_content">
@@ -43,9 +97,9 @@
           </div>
           <div class="blog_3"><h2>How Javascript Event loop work?</h2>
         <p>The event loop in JS monitor the Call Stack and the Callback Queue. This loop constantly checks whether the call stack is empty or not and if it is, the functions waiting to be executed in the callback queue get pushed to the call stack. </p>
-    </div>
+           </div>
           <div class="blog_4">
-            <h2>how we can get undefined value?</h2>
+            <h2>How we can get undefined value?</h2>
             <p>
                 <ul>
                     <li>Variable that is not initialized will give undefined.
