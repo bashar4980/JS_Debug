@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-  <style>
-        #blog_container{
-             width: 85%;
-             margin: 0 auto;
-        }
-        #blog_container h1{
-            text-align: center;
-            font-size: 40px;
-        }
-  </style>
-</head>
-<body>
+    <style>
+      #blog_container {
+        width: 85%;
+        margin: 0 auto;
+      }
+      #blog_container h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
     <main>
-        <section id="blog_container">
-           <h1>Read the Javascript Blog</h1>
-           <div id="blog_content">
-               <div class="blog_1">
-                <h2>Difference between localStorage and sessionStorage</h2>
-                <p>
-                    Data in LocalStorage does not expire but data in sessionStorage is cleared when the page session ends. localStorage capacity is 5MB/10MB but sessionStorage capacity is 5MB.localStorage is not session based, need to be delete by JS or Manually but sessionStorage is session based.
-                </p>
-               </div>
-               <div class="blog_2">
-                <h2>Difference between Global scope and Block scope</h2>
-                Variables declared Globally (outside any function) have Global Scope.
-                Variables declared inside a { } block that is block Scope.
-                Global scope's variables can be accessed from anywhere in a JavaScript program but Block Scope's variables can not accessed form outside the block
-
-               </div>
-               <div class="blog_3">What is Javascript Event loop?</div>
-               <div class="blog_3"></div>
-           </div>
-        </section>
+      <section id="blog_container">
+        <h1>Read the Javascript Blog</h1>
+        <div id="blog_content">
+          <div class="blog_1">
+            <h2>Difference between localStorage and sessionStorage</h2>
+            <p>
+              Data in LocalStorage does not expire but data in sessionStorage is
+              cleared when the page session ends. localStorage capacity is
+              5MB/10MB but sessionStorage capacity is 5MB.localStorage is not
+              session based, need to be delete by JS or Manually but
+              sessionStorage is session based.
+            </p>
+          </div>
+          <div class="blog_2">
+            <h2>Difference between Global scope and Block scope</h2>
+            <p>
+              Variables declared Globally (outside any function) have Global
+              Scope. Variables declared inside a { } block that is block Scope.
+              Global scope's variables can be accessed from anywhere in a
+              JavaScript program but Block Scope's variables can not accessed
+              form outside the block
+            </p>
+          </div>
+          <div class="blog_3"><h2>How Javascript Event loop work?</h2>
+        <p>The event loop in JS monitor the Call Stack and the Callback Queue. This loop constantly checks whether the call stack is empty or not and if it is, the functions waiting to be executed in the callback queue get pushed to the call stack. </p>
+    </div>
+          <div class="blog_3">
+            <h2></h2>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
